@@ -1,0 +1,44 @@
+echo "# testgit" >> README.md
+
+Truy cập vào đường dẫn folder projec cd "folder" // lệnh ls - để hiện xem file nào trong thư mục đó
+
+git init // tạo git repo trong máy
+git status // xem trạng thái file vd: đã commit hay chưa
+
+git add tenfile.txt // co the add tung file hoặc sd git add . để add toàn bộ
+
+git commit -m "first commit" // commit file dòng 1 thay đổi cái gì, dòng 2 trống, dòng 3 tại sao lại thay đổi
+
+git log // Kiểm tra thông tin tác giả commit, ngày giờ email
+
+
+git branch -M master // tạo kênh chính không cần cũng được lệnh sau tự tạo
+
+git remote add origin https://github.com/xuancanhit99/testgit.git // két nối với link github làm 1 lần đầu tiên
+
+git push -u origin master // push lên master lần sau chỉ cần git push (tuỳ vào nhánh hiện tại đang ở)
+
+git pull // update code trên link về máy
+
+/////////////////////////////
+Branch // kênh, mặc định có 1 kênh master // Kênh branch được dùng để phát triển các chức năng riêng biệt trước khi ta quyết định thêm vào master chính 
+để hoàn thanh code
+// có thể có nhiều branch sau đó chúng ta sẽ dùng lệnh merge để ghép nối update dữ liệu từ branch sang master
+
+git branch ten-branch // tạo branch
+
+git branch // check xem có bao nhiêu branch
+
+git checkout ten-branch // chuyển code qua kênh branch chuyển kênh branch để làm việc, set branch chính để làm việc 
+
+git  git branch -b ten-branch = git branch ten-branch + git checkout ten-branch // tạo và chuyển code luôn
+
+// add ., commit, push như trên
+
+MERGE // ghép hoàn thành master
+
+git checkout ten-branch // truy cập branch cần nối về master
+
+git merge ten-brand
+
+sau đó add, commit và push lên là okkk
